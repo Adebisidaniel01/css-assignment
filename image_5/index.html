@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WP Pusher Checkout</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f8fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            display: flex;
+            background: white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .form-section {
+            flex: 2;
+            padding: 50px;
+        }
+        .sidebar {
+            flex: 1;
+            background: #1d72b8;
+            color: white;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        h2 {
+            font-size: 32px;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        .btn {
+            width: 100%;
+            background: #009688;
+            color: white;
+            padding: 16px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: center;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #00796b;
+        }
+        .sidebar h3 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+        .sidebar p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .price {
+            font-size: 80px;
+            font-weight: bold;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+        .price span {
+            font-size: 26px;
+            font-weight: normal;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        blockquote {
+            font-style: italic;
+            margin: 20px 0;
+            padding: 10px;
+            border-left: 4px solid white;
+        }
+        .sidebar a {
+            color: #fff;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Checkout</h2>
+            <form>
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="Jane">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="janedoe@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="card">Credit Card</label>
+                    <input type="text" id="card" placeholder="Card Number">
+                </div>
+                <button class="btn">Buy WP Pusher</button>
+            </form>
+        </div>
+        <div class="sidebar">
+            <h3>Freelancer</h3>
+            <p class="price">$99 <span>/ year</span></p>
+            <p>Automatically renews after 1 year</p>
+            <ul>
+                <li>✅ Use on 5 client sites</li>
+                <li>✅ Private repositories</li>
+                <li>✅ Email support</li>
+            </ul>
+            <p>Need 20 client sites? <br> <a href="#">Switch to the Agency plan.</a></p>
+            <blockquote>"FTP is horrible to deal with. WP Pusher solves that issue, and the customer support is awesome!"</blockquote>
+            <p><strong>Kirk Beard</strong></p>
+        </div>
+    </div>
+</body>
+</html>
